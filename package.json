@@ -1,0 +1,27 @@
+{
+  "name": "graphql-api",
+  "version": "0.0.1",
+  "description": "GraphQL testing purpose app",
+  "main": "index.ts",
+  "scripts": {
+    "start": "npm run build:live",
+    "build": "tsc -p .",
+    "build:live": "nodemon --watch 'src/**/*.ts' --exec ts-node src/index.ts"
+  },
+  "author": "MrJackphil",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.16.0",
+    "@types/node": "^10.12.18",
+    "eslint": "^5.12.1",
+    "express": "^4.16.4",
+    "express-graphql": "^0.7.1",
+    "graphql": "^14.1.1",
+    "typescript": "^3.2.4"
+  },
+  "devDependencies": {
+    "@typescript-eslint/parser": "^0.2.1",
+    "nodemon": "^1.18.9",
+    "ts-node": "^7.0.1"
+  }
+}
